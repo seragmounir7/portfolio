@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", "Georgia", serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
+
+  --color-void: #08070a;
+  --color-obsidian: #0e0d11;
+  --color-surface: #16141a;
+  --color-surface-2: #1e1b23;
+  --color-line: rgba(244, 238, 227, 0.09);
+  --color-line-strong: rgba(244, 238, 227, 0.18);
+
+  --color-sand-50: #faf3e7;
+  --color-sand-200: #ecd8b4;
+  --color-sand-400: #d9a95e;
+
+  --color-spice-300: #f0b25f;
+  --color-spice-400: #e0973f;
+  --color-spice-500: #c9762a;
+  --color-spice-600: #a85a1f;
+
+  --color-glow-400: #8b7cf6;
+  --color-glow-500: #6a58e0;
+  --color-glow-600: #4d3cb5;
+
+  --color-ink-50: #f5efe6;
+  --color-ink-300: #b8ac9c;
+  --color-ink-500: #83786c;
+
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-marquee: marquee 34s linear infinite;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(28px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-void);
+  color: var(--color-ink-50);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-spice-500);
+  color: var(--color-void);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-void);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-2);
+  border-radius: 999px;
+  border: 2px solid var(--color-void);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.glass {
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.055),
+    rgba(255, 255, 255, 0.015)
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--color-line);
+}
+
+.text-gradient-spice {
+  background: linear-gradient(
+    100deg,
+    var(--color-spice-300),
+    var(--color-sand-200) 45%,
+    var(--color-glow-400)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+}

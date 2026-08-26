@@ -1,152 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Serag Mounir</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/character/idle/smiley.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Serag Mounir — Frontend Developer & AI Enthusiast. Portfolio, journey, and projects." />
+    <meta name="theme-color" content="#0a0a0c" />
 
-<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-</head>
-<body>
-
-<main class="hero">
-
-    <!-- LEFT CARD -->
-
-    <section class="glass left-panel">
-
-        <h1>Serag Mounir</h1>
-
-        <h2>Full Stack Software Engineer</h2>
-
-        <p>
-            Building scalable SaaS &
-            AI powered applications.
-        </p>
-
-        <button class="cta">
-            Let's Work Together
-            <i class="fa-solid fa-arrow-right"></i>
-        </button>
-
-
-    </section>
-
-    <!-- CHARACTER -->
-
-    <section class="character-area">
-
-        <div class="character-wrapper">
-<!-- ss ss-->
-            <img id="character"
-                 src="character/idle/smiley.png"
-                 draggable="false">
-
-            <div id="head-zone" class="zone head"></div>
-            <!-- <div id="leg-zone" class="zone legs"></div> -->
-            <div id="laptop-zone" class="zone laptop"></div>
-
-        </div>
-
-        <div class="ground-shadow"></div>
-
-    </section>
-
-    <!-- RIGHT CARD -->
-
-    <section class="glass right-panel">
-
-    <nav class="tabs">
-
-        <button class="tab active" data-tab="contact">Contact me</button>
-        <button class="tab" data-tab="milestones">Milestones</button>
-
-    </nav>
-
-    <div class="divider"></div>
-
-    <div class="tab-content">
-
-        <!-- About -->
-        <div class="panel active" id="contact">
-
-            <div class="contact-card">
-                <i class="fa-solid fa-envelope"></i>
-                <span>admin@seragmounir.com</span>
-                <i class="fa-regular fa-copy copy"></i>
-            </div>
-
-            <div class="contact-card">
-                <i class="fa-solid fa-phone"></i>
-                <span>+1 (437) 453-1120</span>
-                <i class="fa-regular fa-copy copy"></i>
-            </div>
-
-            <div class="contact-card">
-                <i class="fa-solid fa-location-dot"></i>
-                <span>Waterloo, Ontario</span>
-                <i class="fa-regular fa-copy copy"></i>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="follow-row">
-
-                <h4>Follow me</h4>
-
-                <div class="socials">
-                    <a href="https://github.com/seragmounir7" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/serageldin-abdelmoaty/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/serag.mohemma/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Milestones -->
-        <div class="panel" id="milestones">
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h5>2016</h5>
-                    <p>Graduated in Computer Engineering.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <h5>2017–2024</h5>
-                    <p>Worked as Full Stack Developer across Egypt.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <h5>2024</h5>
-                    <p>Moved to Canada.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <h5>2025</h5>
-                    <p>Full Stack Web Developer (Co-op) Conestoga Smart Centre, Conestoga College | Cambridge, Ontario, Canada</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-</main>
-
-<script src="script.js"></script>
-
-</body>
+    <title>Serag Mounir — Frontend Developer &amp; AI Enthusiast</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
