@@ -34,6 +34,7 @@ const transitions = {
     //     }
     // },
 
+    ///
     laptop: {
         hover: {
             smiley: { gif: "character/hover-on-laptop-smiley.gif", duration: 3180 },
