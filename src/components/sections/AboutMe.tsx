@@ -25,13 +25,11 @@ export function AboutMe() {
           className="relative order-2 mx-auto w-full max-w-sm md:order-1"
         >
           <div className="absolute inset-0 -z-10 scale-90 rounded-[2.5rem] bg-gradient-to-tr from-spice-500/30 via-glow-500/20 to-transparent blur-3xl" />
-          <div className="glass overflow-hidden rounded-[2.5rem] p-3">
-            <img
-              src="/character/idle/focus.png"
-              alt="Serag Mounir portrait"
-              className="aspect-[4/5] w-full rounded-[2rem] object-cover"
-            />
-          </div>
+          <img
+            src="/character/idle/focus.png"
+            alt="Serag Mounir portrait"
+            className="w-full drop-shadow-[0_30px_40px_rgba(0,0,0,0.45)]"
+          />
         </motion.div>
 
         <motion.div
